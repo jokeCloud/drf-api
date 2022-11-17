@@ -25,9 +25,8 @@ def agendamento_detail(request, id):
         obj.delete()
         return Response(status=204)
 
+
 # listar e inserir agendamentos
-
-
 @api_view(http_method_names=['GET', 'POST'])
 def agendamento_list(request):
     if request.method == 'GET':
